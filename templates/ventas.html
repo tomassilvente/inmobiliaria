@@ -2,12 +2,13 @@
     <a class='link linkTitu my-4' href="/casaVenta">Ventas</a>
     <div class='container-fluid row justify-content-around mb-3 my-4'>
         {% for a in range(3) %}
-        <div class="card cartita my-3 border shadow">
+        <div class="card cartita my-3 shadow border">
             <a href="/detalles/{{casasVent[a].0}}" ><img class="fotoCarta card-img-top img-fluid mt-2" src="../uploads/{{casasVent[a].1}}" alt="..." /></a>
             <div class="card-body">
                 <h5 class="card-title">{{casasVent[a].2}}</h5>
-                <p class="card-text">{{casasVent[a].3}} de {{casasVent[a].4}} m², {{casasVent[a].5}} habitaciones y {{casasVent[a].6}} baños</p>
-                <a href="/detalles/{{casasVent[a].0}}" class="position-center btn btn-success ">Detalles</a>
+                <p class="card-text"> {{casasVent[a].4}} m²</p> 
+                <p class="card-text">🚽🛁 &nbsp; {{casasVent[a].6}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 🛏 &nbsp; {{casasVent[a].5}}</p>
+                <a href="/detalles/{{casasVent[a].0}}" class="position-center btn btn-success shadow">Detalles</a>
             </div>
          </div>
          {% endfor %}
